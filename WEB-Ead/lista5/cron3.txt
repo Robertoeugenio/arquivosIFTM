@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cronômetro versão 1 </title>
+    <script>
+        var idSegundo;
+        var segundo = 00;
+        var minuto = 50;
+        var hora = 00;
+
+
+
+
+        function playBtn() {
+            if (segundo >= 59) {                                               // ACIMA 59 SEGUNDO ELE ZERO E SOMA 1 MINUTO
+                segundo = 0;
+                segundo ++;
+                minuto = minuto + 1;
+                document.getElementById("minuto").innerHTML = minuto;
+            }
+            if (minuto >= 59) {                                                // ACIMA 59 SEGUNDO ELE ZERO E SOMA 1 MINUTO                 
+                minuto = 0;
+                hora++;
+                document.getElementById("hora").innerHTML = hora;
+            }
+            if (hora > 23) {
+                hora = 0;
+                document.getElementById("hora").innerHTML = hora;
+            }
+
+            if (segundo < 10)                                                 // MENOR 10 ACRESCENTA O ZERO 
+                document.getElementById("segundo").innerHTML = "0" + segundo;
+            else
+                document.getElementById("segundo").innerHTML = segundo;           // VELOCIDADE
+            if (minuto < 10)                                                    // MENOR 10 ACRESCENTA O ZERO           
+                document.getElementById("minuto").innerHTML = "0" + minuto;
+            else
+                if (minuto < 10)                                                    // MENOR 10 ACRESCENTA O ZERO           
+                    document.getElementById("minuto").innerHTML = minuto;
+            if (hora < 10)                                                    // MENOR 10 ACRESCENTA O ZERO    
+                document.getElementById("hora").innerHTML = "0" + hora;
+            else
+                if (hora < 10)                                                    // MENOR 10 ACRESCENTA O ZERO    
+                    document.getElementById("hora").innerHTML = hora;
+
+
+            idSegundo = setTimeout("playBtn()", 1);
+
+        }
+        function pauseBtn() {
+            clearTimeout(idSegundo);
+        }
+        function stopBtn() {
+            clearTimeout(idSegundo);
+            document.getElementById("segundo").innerHTML = "00";
+            document.getElementById("minuto").innerHTML = "00";
+            document.getElementById("hora").innerHTML = "00";
+        }
+    </script>
+</head>
+
+<body>
+    <h3> Construir um cronômetro do tipo HH:MM:SS, contendo três botões "Play", "Pause" e "Stop".
+        Dica: Utilize o conceito de temporizadores apresentado na última aula (setTimeout e clearTimeout). </h3>
+
+    <form action="">
+        <input type="button" id="play" value="Play" onclick="playBtn()">
+        <input type="button" id="pause" value="Pause" onclick="pauseBtn()">
+        <input type="button" id="stop" value="Stop" onclick="stopBtn()">
+
+    </form>
+
+    <span id="hora">00<span>:</span><span id="minuto">00</span><span>:</span><span id="segundo">00</span>
+</body>
+
+</html>

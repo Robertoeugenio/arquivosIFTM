@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Exercicio 5 </title>
+    <script>
+        var nome = prompt("Digite seu nome completo: ");
+        var nome = nome.toLocaleLowerCase();
+        var nome =  nome.split(" ");
+        nome[0] = nome[0].toUpperCase();
+        nome[nome.length-1] = nome[nome.length-1].toUpperCase();
+        nome = nome.join(" ");
+        alert("O primeiro nome com a letra maiúscula ==>" + nome);
+
+
+     //   alert("O primeiro nome com letra maiúscula ==> " + nomeSeparado[0].toUpperCase() + " " + nomeSeparado[1].toLowerCase()
+       //     + " " + nomeSeparado[2].toLowerCase() + " " + nomeSeparado[3].toLowerCase());
+
+    </script>
+</head>
+
+<body>
+    <h1>Exercicio 5. </h1>
+    <br>
+    <P> Construa uma página web capaz de solicitar o nome completo do usuário e, em seguida,
+        exiba, através de uma mensagem de alerta, o primeiro nome dele contendo letras maiúsculas
+        e o restante composto apenas por letras minúsculas.
+    </P>
+    <br>
+    <p>
+        <b>Página de Referência</b>
+
+        <a href="https://www.w3schools.com/jsref/jsref_split.asp"> Referência</a>
+
+    </p>
+
+</body>
+
+</html>

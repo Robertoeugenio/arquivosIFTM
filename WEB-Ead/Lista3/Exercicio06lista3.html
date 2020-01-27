@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="Exercicio06_lista03.css" rel="stylesheet">
+    <script src="Exercicio06_lista03.js"></script>
+   
+    <title>Exercicio 6</title>
+
+  </head>
+
+<body>
+    <h1>Exercicio 6 Lista 3 </h1>
+    <br>
+    <P> Crie uma página HTML capaz de validar o acesso de determinado usuário.</p>
+    <p> A interface a ser implementada deverá ser composta pelos mesmos elementos mostrados na figura a seguir:</P>
+
+
+    <p>As descrições de cada um dos elementos desta página bem como suas funcionalidades são detalhadas a seguir: </p>
+
+
+    <P>I. Utilize o conceito de tabelas para organizar os elementos do formulário (os elementos deverão estar
+        centralizados horizontalmente em relação a janela do navegador) </p>
+    <p> Tanto os scripts para validação da página quanto as regras CSS deverão ser armazenados em arquivos separados da
+        página HTML III </p>
+    <p> Formatação do texto: “Acesso ao sistema” </p>
+    <p> a) Tamanho do texto: 24 pixels</p>
+    <p> b) Cor: Azul; </p>
+    <p> c) Tipo de fonte: Verdana; </p>
+    <p>d) Alinhamento: centralizado horizontalmente</p>
+    <P> IV Os campos “Senha” e “Confirmar senha” não devem permitir que a informação digitada pelo usuário fique visível
+        a qualquer pessoa (tipo password - oculto) </P>
+    <P> V. Botão “Entrar”: Ao pressionar este botão a página deverá realizar as seguintes validações: </P>
+    <P> a) Primeira validação: Verifica se o Login foi digitado corretamente, ou seja, se o valor deste campo é
+        diferente de vazio. Caso o usuário não tenha digitado nenhuma informação, uma mensagem deverá aparecerá
+        informando-o sobre o problema ocorrido. Caso contrário, a segunda validação será realizada</P>
+    <P> b) Segunda validação: Só será realizada após a primeira validação e consistirá em verificar se os dados dos
+        campos “Senha” e “Confirmar senha” são iguais. Caso os valores destes dois campos forem diferentes, a página
+        deverá limpar os dados dos campos “Senha” e “Confirmar senha” e informar ao usuário, através de uma mensagem de
+        erro, que as informações destes campos não são iguais. Caso contrário, o usuário será informado que todos os
+        campos foram digitados corretamente. VI</P>
+    <P> VI. Botão “Limpar”: Ao pressionar este botão as informações dos seguintes campos deverão ser limpos: Login,
+        Senha e Confirmar senha. </P>
+    <P>VII. Colocar o texto “(max. 8 caracteres)” ao lado dos campos “Senha” e “Confirmar senha” com as seguintes
+        configurações</P>
+    <P> a) Cor da fonte: vermelho </P>
+    <P>b) Estilo da fonte: verdana </P>
+    <P> c) Tamanho da fonte: 10 pixels </P>
+
+
+    <div class="corpo">
+        <form>
+            <h1>Acesso ao Sistema</h1>
+            <table>
+                <tr>
+                    <td class="tabelaCampo">
+                        <label for="login">Login</label>
+                    </td>
+                    <td>
+                        <input type="text" id="login" width="2500px">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabelaCampo">
+                        <label for="senha">Senha</label>
+                    </td>
+                    <td>
+                        <input type="password" id="senha" maxlength="8">
+                    </td>
+                    <td>
+                        <label for="aviso" class="aviso">(max. 8 caracteres)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="coluna1">
+                        <label for="cSenha">Confirmar senha</label>
+                    </td>
+                    <td>
+                        <input type="password" id="cSenha" maxlength="8">
+                    </td>
+                    <td>
+                        <label for="aviso" class="aviso">(max. 8 caracteres)</label>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Entrar" onclick="validação()">
+                    </td>
+                    <td>
+                        <input type="button" type="button" value="limpar" onclick="apagar()">
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+</body>
+</body>
+
+
+</html>

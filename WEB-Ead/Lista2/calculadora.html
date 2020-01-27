@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function calcular(){
+            var valor1 = parseFloat(document.getElementById('txtValor1').value);
+            var valor2 = parseFloat(document.getElementById('txtValor2').value);
+                        
+            var resultado = valor1 + valor2;
+            document.getElementById('txtResultado').value = resultado;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="txtNome"> Valor 1 </label>
+        <input type="text" id="txtValor1">
+        <br>
+        <label for="txtNome"> Valor 2 </label>
+        <input type="text" id="txtValor2">
+        <br><br>
+        <input type="button" value="+"onclick="calcular()">
+        <input type="button" value="-">
+        <input type="button" value="*">
+        <input type="button" value="/">
+        <br><br>
+        <label for="txtResultado"> Resultado: </label>
+        <input type="text"id="txtResultado">
+    </form>
+</body>
+
+</html>

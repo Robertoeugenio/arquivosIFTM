@@ -1,0 +1,25 @@
+#primeiraNota,#segundaNota {
+    background-color: gold;
+    border-radius: 15px;
+    width: 180%;
+    text-align: center;
+}
+input[type="button"] {
+    border-radius: 15px;
+    background-color: green;
+    margin: 1px ;    
+}
+
+form {
+    border: 1px solid black;
+    width: 250px;
+    border-radius: 15px;
+    background: blue;
+}
+.corpo {
+    margin: auto;
+}
+
+input[type="button"]:active {
+    background-color: red;
+}

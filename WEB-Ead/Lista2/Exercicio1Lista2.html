@@ -1,0 +1,65 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-br">
+
+    <style>
+        .sorteiado {
+            display: inline-block;
+            background-color: blue;
+            color: black;
+            border-radius: 10%;
+            font-size: 160%;
+            height: 5%;
+            width: 12%;
+        }
+
+        .centro {
+            border-style: outset;
+            border-color: black;
+            background-color: aqua;
+            text-align: center;
+            width: 20%;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    <title>Lista 2 Exercício 1</title>
+
+    <p>1. Construa uma página para a Internet capaz de gerar e mostrar os seis números da mega sena
+        para uma pessoa. Os números deverão ser exibidos no corpo do documento HTML ao usuário,
+        após o carregamento da página.
+    </p>
+</head>
+<script>
+    $(document).ready(function () {
+        var sorteio = new Array(6);
+        for (var i = 0; i < 6; i++) {
+            var x = (Math.floor(Math.random() * 60) + 1);
+            if (sorteio.includes(x)) i--;
+            else sorteio[i] = x;
+        }
+        sorteio.sort(function (a, b) { return a - b });
+        $("#sorteiado0").text(sorteio[0]);
+        $("#sorteiado1").text(sorteio[1]);
+        $("#sorteiado2").text(sorteio[2]);
+        $("#sorteiado3").text(sorteio[3]);
+        $("#sorteiado4").text(sorteio[4]);
+        $("#sorteiado5").text(sorteio[5]);
+        $("#sorteiado6").text(sorteio[6]);
+    });
+</script>
+
+<body>
+    <div class="centro">
+        <h2>Numeros Sorteados</h2>
+        <p class="sorteiado" id="sorteiado0"></p>
+        <p class="sorteiado" id="sorteiado1"></p>
+        <p class="sorteiado" id="sorteiado2"></p>
+        <p class="sorteiado" id="sorteiado3"></p>
+        <p class="sorteiado" id="sorteiado4"></p>
+        <p class="sorteiado" id="sorteiado5"></p>
+    </div>
+</body>
+
+</html>

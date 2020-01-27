@@ -1,0 +1,42 @@
+table {
+    font-family: arial;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .formato{
+    color: blue;
+}  
+input[type="button"], input[type="reset"] {
+    background-color:green;
+    color: black;
+    width: 240px;
+    border-radius: 35px;
+    border-style: solid 1px green;
+}
+select {
+    width: 250px;
+}
+input[type="button"]:hover, input[type="reset"]:hover {
+    background-color: red;
+    color: black;
+    width: 240px;
+    border-radius: 35px;
+    border-style: solid 1px black;
+}
+label {
+    color: red;
+}
+input{
+    width: 230px;
+}
+

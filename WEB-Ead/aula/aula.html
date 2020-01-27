@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/funcoes.js"></script>
+    <link rel="stylesheet" href="css/stilo.css">
+
+    
+    <title>Css Dinâmico + JavaScript</title>
+    <script>
+            function trocarImg(nroImg){
+                document.getElementById("desenho").src = "img/imagem0" + nroImg+ ".png";
+            }
+    </script>
+</head>
+<body>
+    <!-- <div>
+        <h1>Titulo        </h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi neque quibusdam officiis, deserunt quod unde consequatur facere dicta illum nobis enim fuga repellat, adipisci omnis sint aspernatur, ducimus mollitia voluptate.</p>
+
+        ul>(li>a)*5
+    </div> -->
+     <ul>
+         <li><a href="#" onmousemove="trocarImg(1)"> Lógica de programção</a></li>
+         <li><a href="#" onmousemove="trocarImg(2)"> Inglês instrumental</a></li>
+         <li><a href="#" onmousemove="trocarImg(3)"> Fundamentos de Web Design 1</a></li>
+         <li><a href="#" onmousemove="trocarImg(4)"> Metodologia Científica</a></li>
+         <li><a href="#" onmousemove="trocarImg(5)"> Sistemas Operacionais</a></li>
+     </ul>
+
+
+<img src="img/imagem1.png" id="desenho" alt="">
+
+</body>
+</html>

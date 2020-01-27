@@ -1,0 +1,29 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>temporizador</title>
+</head>
+<body>
+    <form>
+        <input type="button" value="Muda" id="btMudar" onclick="btnMudar()">
+        <input type="button" value="Volta" id="btVoltar" onclick="btnVoltar()">
+        <input type="button" value="Temporizador" id="btMudaTexto" onclick="mudarTexto()">
+        <BR><BR>
+    </form>
+    <p id="texto">Roberto Eugenio dos Santos</p>
+    <script>
+        function btnMudar(){
+            document.getElementById("texto").innerHTML = "Sistemas para Internet"
+        }
+        function btnVoltar(){
+            document.getElementById("texto").innerHTML = "Roberto Eugenio mudou depois de trê segundos"
+        }
+        function mudarTexto(){
+            setTimeout("btnMudar()",1000);
+            setTimeout("btnVoltar()",1000);
+        }
+    </script>
+</body>
+</html>

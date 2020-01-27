@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="Exercicio05_lista03.css" rel="stylesheet">
+    <script src="Exercicio05_lista03.js"></script>
+
+    <title>Exercicio 5</title>
+
+</head>
+
+<body>
+    <h1>Exercicio 5. </h1>
+    <br>
+    <P> Construa uma página HTML contendo o mesmo layout mostrado na figura a seguir </P>
+    <p>Esta página consiste em uma calculadora contendo apenas as operações de soma (+), subtração (-), multiplicação
+        (*) e divisão (/).</p>
+    <P>Para utilizá-la, o usuário deverá digitar o primeiro e segundo valores dentro das caixas “1º Valor” e “2º Valor”,
+        respectivamente,</p>
+    <p>e em seguida clicar sobre o botão correspondente a operação desejada. O resultado deverá ser exibido na última
+        caixa “Resultado”.</p>
+    <p>>OBS: Trate a divisão por zero, além disso, as operações (+, -, * ou /)
+        só poderão ser realizadas se houver números digitados dentro de cada uma das caixas (1º e 2º valor).</p>
+    <p>Sugestão: Utilizar o conceito de tabela para organizar os elementos do formulário.</p>
+
+
+    <div class="corpo">
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="primeiraValor">1º Valor:</label>
+                        <input type="number" id="primeiroValor" onkeyup="validação(this.id)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="segundoValor">2º Valor:</label>
+                        <input type="number" id="segundoValor" onkeyup="validação(this.id)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="+" onclick="calcular('+')">
+                        <input type="button" value="-" onclick="calcular('-')">
+                        <input type="button" value="*" onclick="calcular('*')">
+                        <input type="button" value="/" onclick="calcular('/')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="resultado">Resultado: </label>
+                        <input type="number" id="resultado" readonly> <!-- DICA DO CARLOS readonly Retornar se o campo é leitura ou não -->
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+
+</html>

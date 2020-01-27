@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="Exercicio02_lista03.css" rel="stylesheet">
+    <script src="Exercicio02_lista03.js"></script>
+
+    <title>Exercicio 2 </title>
+</head>
+
+<body>
+    <h1>Exercicio 2 Lista 3 </h1>
+    <br>
+    <P> Construa uma página HTML contendo o mesmo layout mostrado na figura a seguir:</P>
+    <p>Ao digitar um valor dentro da primeira caixa de textos,
+        “Digite um valor”, e após clicar sobre o botão “Mostrar o dobro”,
+        o dobro do valor digitado pelo usuário deverá ser exibido dentro da caixa de texto “Dobro do valor”. </p>
+    <p> OBS: Valide a informação do primeiro campo, isto é, verifique se é um número.</p>
+    <p> A segunda caixa de textos deverá estar desabilitada para inserção de valores. </P>
+
+    <div class="corpo">
+
+        <label for="valor">Digite um valor:</label>
+        <input type="number" id="valor" />
+        <br>
+        <input type="button" value="Mostrar o dobro" onclick="calcular()" />
+        <br>
+        <label for="Dobro">Dobro do valor:</label>
+        <input type="number" id="dobro" readonly disabled />
+        <!-- DICA DO CARLOS => readonly garante que o campo seja apenas leitura -->
+    </div>
+</body>
+
+</html>

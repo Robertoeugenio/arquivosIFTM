@@ -1,0 +1,85 @@
+body{
+    margin:0px;
+}
+h1{
+    color: red;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    border-bottom: 1px solid black;
+}
+
+#personagem{
+    width: 400px;
+    height:350px; 
+    float: left;
+    border-radius: 15px;
+}
+ul{
+    list-style: none;
+    border: 1 px solid black;
+    padding: 0px;
+    width: 270px;
+}
+ul, li{
+    margin: 5px 5px 5px 0px;
+}
+li a{
+    text-align: right;
+    color: black;
+    text-decoration: none;
+    color: black;
+    background-color:rgb(189,191,9);
+    border-radius: 0px 15px 15px 0px;
+    font-weight: bold;
+    font-family: Arial;
+    padding: 10px;
+    display: block;
+    transition: all 0.1s;
+}
+li :hover{
+    background-color: black;
+    color: rgb(189,191,9);
+    border-radius: 0px 15px 15px 0px;
+    transform-origin: top left;
+    transform: scaleX(1.1);
+}
+#legenda{
+    text-align: center;
+    margin: 0px;
+    font-size: 20px;
+    float:left;
+    width:300px;
+}
+#menu{
+    float:left;
+
+}
+#menu{
+    width:300px;
+}
+#legenda{
+    height: 250px;
+    margin: 20px 0px 0px 0px;
+    top: 80px;
+    font-size: 80px;
+    text-align: center;
+}
+
+.balls {
+    width: 40px;
+    height: auto;
+    float: left;
+}
+
+#circulos {
+    clear: both;
+    padding-top: 10px;
+    width: 100%;
+    position: relative;
+    left: 26.5%;
+}
+
+.balls:hover {
+    background: SkyBlue;
+    border-radius: 50px;
+}

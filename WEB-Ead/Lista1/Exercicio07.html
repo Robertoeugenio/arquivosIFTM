@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Exercicio 7 </title>
+<script>
+    
+        var texto = prompt("Digite um texto:");
+        var palavra1 = prompt("Digite a primeira palavra que tenha no texto:");
+        var palavra2 = prompt("Digite a palavra para substituir :");
+		
+		var padrao = new RegExp(palavra1, 'g')
+        texto = texto.replace(padrao, palavra2);
+        alert(texto);
+
+
+</script>
+</head>
+
+<body>
+  <h1>Exercicio 7. </h1> 
+  <br>
+    <P> Construa uma página web capaz de solicitar ao usuário um texto qualquer, em seguida duas
+            palavras (uma de cada vez) e, por último, mostre o texto inicial ao usuário alterado, onde
+            toda palavra contida no texto original idêntica à primeira palavra informada pelo usuário
+            deverá ser substituída pela segunda palavra.
+    </P>
+    <br>
+    <p>
+       <b>Página de Referência</b>
+        
+        <a href="https://www.homeandlearn.co.uk/javascript/javascript_strings_split_join.html"> Referência</a>
+
+    </p>
+    
+</body>
+</html>

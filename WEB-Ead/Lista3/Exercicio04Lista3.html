@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="Exercicio04_lista03.css" rel="stylesheet">
+    <script src="Exercicio04_lista03.js"></script>
+
+    <title>Exercicio 4</title>
+
+</head>
+
+<body>
+    <h1>Exercicio 4 Lista 3  </h1>
+    <br>
+    <P> Complemente o exercício anterior com as seguintes informações: se o aluno estiver sido aprovado, </P>
+    <p>informe a ele, além da situação de APROVADO a nota final obtida na disciplina. </p>
+    <p>Caso ele tenha sido reprovado, informe a pontuação que ele precisaria para ter sido aprovado, além da mensagem de REPROVAÇÃO.</p>
+    
+    <div class="corpo">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="primeiraNota">Nota (1º bimestre):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="primeiraNota" min="0" max="50" onkeyup="validação(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="segundaNota">Nota (2º bimestre):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="segundaNota" min="0" max="50" onkeyup="validação(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Resultado" onclick="calcular()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    
+</body>
+
+
+</html>

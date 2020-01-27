@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-br">
+
+    <style>
+        #mostraintegrante {
+            background-color: greenyellow;
+            font-size: 15px;
+            padding: 1%;
+            font-family: 'normal';
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            width: 30%;
+        }
+
+        h3 {
+            width: 30%;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    <title> Lista 2 - Exerccio 2</title>
+    <p>2. Crie uma página web capaz de sortear a ordem de apresentação de um grupo de pessoas
+        a partir das seguintes informações: número de pessoas e o nome de cada uma delas.
+        Após a entradas destas informações, a página deverá ser capaz de exibir ao usuário,
+        no corpo do documento, a sequência das apresentações, conforme mostrado na imagem a seguir:
+    </p>
+</head>
+<script>
+
+
+    $(document).ready(function () {
+
+        var quantidade = prompt("digite o numero para sorteio");
+        var integrante = [];
+        for (var i = 0; i < quantidade; i++) {
+            integrante[i] = prompt("digite o integrante da pessoa");
+           
+        }
+        integrante.sort(() => Math.random() - 0.5);
+        $.each(integrante, function (index, value) {
+            $("#mostraintegrante").append((index + 1) + "º  - " + value + '<hr>');
+        });
+    });
+
+</script>
+
+<body>
+    <h2>Ordem de apresentação dos grupos</h2>
+    <h3 id="mostraintegrante"></h3>
+</body>
+
+</html>

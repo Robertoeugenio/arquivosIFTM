@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        function validarExp() {
+            //var expA = document.getElementById("exemploA").value;
+           // var exA  = /^\d[a-zA-Z]{1,4}\d\s?\((if|IF|If|iF)||IFTM)$/
+            //var exA = /^ /d$/
+            var teste = prompt("Digite a expressao regular ");
+            var exA = new RegExp(teste,"i")
+            if (exA.test(expA))
+                alert("Iupi !!! Dentro do padrão");
+            else
+                alert("Ops !!! Fora do padrão");
+        }
+    </script>
+    <title>Arquivo</title>
+</head>
+
+<body>
+    <label for="exemploA"> Testar Botão 
+    </label>
+    <input type="text" id="exemploA">
+    <input type="button" value="Validar" onclick="validarExp()">
+    <label for="exemplo" class="arquivo"></label>
+
+</body>
+
+</html>

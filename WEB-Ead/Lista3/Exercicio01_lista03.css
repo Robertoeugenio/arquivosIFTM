@@ -1,0 +1,27 @@
+
+button {
+    background-color: red;
+    font-size: 100%;
+    width: 20%;
+    height: 45px;
+    color: black;
+    border: 5px solid black;
+    border-style: dotted;
+    border-radius: 18px;
+    margin-top: 1%;
+    margin-left: 38%;
+}
+
+button:hover {
+    text-align: center;
+    background-color: black;
+    font-size: 100%;
+    width: 20%;
+    height: 45px;
+    color: red;
+    border: 5px solid red;
+    border-style: dotted;
+    border-radius: 18px;
+    margin-top: 1%;
+    margin-left: 35%;
+}

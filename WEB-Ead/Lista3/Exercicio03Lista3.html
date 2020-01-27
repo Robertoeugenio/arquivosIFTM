@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="Exercicio03_lista03.css" rel="stylesheet">
+    <script src="Exercicio03_lista03.js"></script>
+
+    <title>Exercicio 3 </title>
+
+</head>
+
+<body>
+    <h1>Exercicio 3 Lista 3 </h1>
+    <br>
+    <P>  Construa uma página HTML contendo o mesmo layout mostrado na figura a seguir: </P>
+    <p>O objetivo desta página é informar ao usuário, através de uma mensagem de alerta, se ele foi aprovado ou não em uma determinada disciplina. Para isso, o aluno deverá informar as notas do 1º e 2º bimestres e, em seguida, clicar sobre o botão “Resultado”. Cada bimestre vale 50,0 pontos. Um aluno será aprovado se a soma das notas for maior ou igual a 60,0 pontos.  </p>
+    <p>Sugestão: Utilizar o conceito de tabela para organizar os elementos do formulário.</p>
+    <p></p> A tabela poderá estar centralizada horizontalmente em relação a janela do navegador.</p>
+    
+    <div class="corpo">
+            <form >
+                <table>
+                    <tr>
+                        <td>
+                            <label for="primeiraNota">Nota (1º bimestre):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="primeiraNota" min="0" max="50" onkeyup="validação(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="segundaNota">Nota (2º bimestre):</label>
+                        </td>
+                        <td>
+                            <input type="number" id="segundaNota" min="0" max="50" onkeyup="validação(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Resultado" onclick="calcular()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>    
+</body>
+</html>
